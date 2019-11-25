@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My WTF Budget</title>
+</head>
+<body>
+  <header>
+    <h1>My WTF Budget</h1>
+    <p>
+      Get a random cost within a given cost range of your choice. Awesome, right?
+    </p>
+  </header>
+  <main>
+    <form>
+      <label for="rangeMin">Price range Min</label>
+      <input type="range" name="rangeMin" id="rangeMin" min="0" max="10000" value="1000">
+      <p id="rangeMinValue"></p>
+
+      <label for="rangeMin">Price range Max</label>
+      <input type="range" name="rangeMax" id="rangeMax" min="0" max="10000" value="1000">
+      <p id="rangeMaxValue"></p>
+
+      <button type="submit">Get my random cost</button>
+    </form>
+
+    <section id="result">
+      <h1>
+        <!-- here goes the random value -->
+      </h1>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    App.start()
+  </script>
+</body>
+</html>
